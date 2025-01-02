@@ -158,7 +158,7 @@
     -->
     <codahale.metrics.version>4.2.19</codahale.metrics.version>
     <!-- Should be consistent with SparkBuild.scala and docs -->
-    <avro.version>1.11.2</avro.version>
+    <avro.version>1.11.4</avro.version>
     <aws.kinesis.client.version>1.12.0</aws.kinesis.client.version>
     <!-- Should be consistent with Kinesis client dependency -->
     <aws.java.sdk.version>1.11.655</aws.java.sdk.version>
@@ -184,7 +184,7 @@
     <scalafmt.skip>true</scalafmt.skip>
     <scalafmt.validateOnly>true</scalafmt.validateOnly>
     <scalafmt.changedOnly>true</scalafmt.changedOnly>
-    <codehaus.jackson.version>1.9.13</codehaus.jackson.version>
+    <codehaus.jackson.version>1.9.14-atlassian-6</codehaus.jackson.version>
     <fasterxml.jackson.version>2.15.2</fasterxml.jackson.version>
     <fasterxml.jackson.databind.version>2.15.2</fasterxml.jackson.databind.version>
     <snappy.version>1.1.10.5</snappy.version>
@@ -341,6 +341,21 @@
       <id>central</id>
       <name>Maven Repository</name>
       <url>https://repo.maven.apache.org/maven2</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
+    <!--
+      Atlassian
+    -->
+    <repository>
+      <id>atlassian-public</id>
+      <name>Atlassian Public Repository</name>
+      <url>https://maven.artifacts.atlassian.com</url>
       <releases>
         <enabled>true</enabled>
       </releases>
